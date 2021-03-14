@@ -9,4 +9,10 @@ from tkinter import *
 
 class salary:
     def __init__(self, root):
-        pass
+        print("Hello")
+
+
+if __name__ == "__main__":
+    root = Tk()
+    main = salary(root)
+    root.mainloop()
