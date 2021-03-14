@@ -5,12 +5,18 @@
 # Here it goes:
 
 from tkinter import *
+import configparser
 
 
 class salary:
     def __init__(self, root):
+        self.config = configparser.ConfigParser()
+        self.config.read('config.ini')
+        # To show all sections of config file.
+        # print(self.config.sections())
+
         self.root = root
-        print("Hello")
+        self.root.title(f"{self.config['DEFAULT']['Title']}")
 
 
 if __name__ == "__main__":
