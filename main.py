@@ -17,6 +17,9 @@ class salary:
 
         self.root = root
         self.root.title(f"{self.config['DEFAULT']['Title']}")
+        self.root.attributes('-fullscreen', self.config['Settings']['Fullscreen'])
+        self.root.geometry('1350x700+300+200')
+
 
 
 if __name__ == "__main__":
