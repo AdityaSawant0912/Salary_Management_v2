@@ -1,5 +1,5 @@
 # Python3
-# 14-3-21
+# 15-3-21
 
 # Documentation
 # Here it goes:
@@ -8,7 +8,7 @@ from tkinter import *
 import configparser
 
 
-class salary:
+class menu:
     def __init__(self, root):
         self.config = configparser.ConfigParser()
         self.config.read('config.ini')
@@ -21,7 +21,7 @@ class salary:
         self.root.geometry('1350x700+300+200')
 
 
-if __name__ == "__main__":
-    master = Tk()
-    main = salary(master)
-    master.mainloop()
+if __name__ == '__main__':
+    root = Tk()
+    start = menu(root)
+    root.mainloop()
