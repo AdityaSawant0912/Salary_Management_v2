@@ -11,7 +11,7 @@ import configparser
 class salary:
     def __init__(self, root):
         self.config = configparser.ConfigParser()
-        self.config.read('config.ini')
+        self.config.read('main_config.ini')
         # To show all sections of config file.
         # print(self.config.sections())
 
